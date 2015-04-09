@@ -12,11 +12,19 @@ for line in file:
 
 SPEED = 0.04
 REPS = 10
+
+XOFFSET = 160
+YOFFSET = 110
+
 for loop in range (REPS):
   for i in range (len(x)):
+	xpos = int(x[i]) + XOFFSET
+	ypos = int(y[i]) + YOFFSET
 	
-	command = "echo 0=" + str(x[i]) + ">/dev/servoblaster"
+	command = "echo 7=" + str(xpos) + ">/dev/servoblaster"
         subprocess.call (command, shell=True)
-	command = "echo 7=" + str(y[i]) + ">/dev/servoblaster"
+
+	command = "echo 0=" + str(ypos) + ">/dev/servoblaster"
         subprocess.call (command, shell=True)
+
 	time.sleep(SPEED)
