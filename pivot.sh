@@ -28,14 +28,14 @@ neutral[5]=150
 neutral[6]=150
 neutral[7]=150
 
-inc[0]=10
-inc[1]=10
-inc[2]=10
-inc[3]=10
-inc[4]=10
-inc[5]=10
-inc[6]=10
-inc[7]=10
+inc[0]=1
+inc[1]=1
+inc[2]=1
+inc[3]=1
+inc[4]=1
+inc[5]=1
+inc[6]=1
+inc[7]=1
 
 red='\e[0;31m'
 endColor='\e[0m'
