@@ -10,7 +10,7 @@ for line in file:
     x.append(row[0])
     y.append(row[1])
 
-SPEED = 0.04
+SPEED = 0.09
 REPS = 10
 
 XOFFSET = 160
@@ -18,6 +18,19 @@ YOFFSET = 110
 
 for loop in range (REPS):
   for i in range (len(x)):
+	xpos = int(x[i]) + XOFFSET
+	ypos = int(y[i]) + YOFFSET
+	
+	command = "echo 7=" + str(xpos) + ">/dev/servoblaster"
+        subprocess.call (command, shell=True)
+
+	command = "echo 0=" + str(ypos) + ">/dev/servoblaster"
+        subprocess.call (command, shell=True)
+
+	time.sleep(SPEED)
+
+
+for i in reversed (range (len(x))):
 	xpos = int(x[i]) + XOFFSET
 	ypos = int(y[i]) + YOFFSET
 	

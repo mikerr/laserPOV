@@ -47,6 +47,17 @@ while [  $COUNTER -lt 15 ]; do
 	echo $LEFT > /dev/servoblaster  
 	echo $BOTTOM > /dev/servoblaster
 
+#reverse
+	sleep $SPEED
+	echo $RIGHT > /dev/servoblaster
+	echo $MID3 > /dev/servoblaster 
+	sleep $SPEED
+	echo $LEFT > /dev/servoblaster  
+	echo $MID2 > /dev/servoblaster 
+	sleep $SPEED
+	echo $RIGHT > /dev/servoblaster
+	echo $MID1 > /dev/servoblaster 
+
 	let COUNTER=COUNTER+1 
 done
 
