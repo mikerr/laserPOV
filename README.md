@@ -11,5 +11,6 @@ number3.sh - draws the number 3
 
 time.sh - countdown - draws number 3 , number 2 , number 1 , number 0
 
+![] (http://i.imgur.com/0SkQH0qm.jpg)
 
 https://www.youtube.com/watch?v=eKgEfplh3RY
